@@ -1,0 +1,7 @@
+coupon_incrementality:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "{{ env_var('COUPON_WAREHOUSE', '../data/warehouse.duckdb') }}"
+      threads: 2

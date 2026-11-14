@@ -1,0 +1,277 @@
+{
+  "unit": "gross profit dollars per $1 of coupon spend, unless stated",
+  "assumptions": {
+    "margin": 0.275,
+    "mail_cost_per_household_campaign": 0.5
+  },
+  "recipients_and_costs": {
+    "A": {
+      "n": 3286,
+      "coupon_dollars": 0.6069326799354822
+    },
+    "BC": {
+      "n": 2612,
+      "coupon_dollars": 0.17692903582358147
+    }
+  },
+  "sales_per_recipient_campaign": {
+    "A": {
+      "naive": {
+        "estimate": 252.13012323444843,
+        "se": 0.0
+      },
+      "causal": {
+        "estimate": 16.141702008544403,
+        "se": 10.502445968955392
+      },
+      "after": {
+        "estimate": 6.8239702730731,
+        "se": 9.759566193936557
+      },
+      "cannibalisation": {
+        "estimate": 0.0,
+        "se": 0.0
+      },
+      "halo": {
+        "estimate": 0.0,
+        "se": 0.0
+      }
+    },
+    "BC": {
+      "naive": {
+        "estimate": 3.952466880785694,
+        "se": 0.0
+      },
+      "causal": {
+        "estimate": 0.15167406977294515,
+        "se": 0.18747003446290517
+      },
+      "after": {
+        "estimate": -0.19953338824125877,
+        "se": 0.19745554944830612
+      },
+      "cannibalisation": {
+        "estimate": -0.17915031341563606,
+        "se": 0.47974585002700915
+      },
+      "halo": {
+        "estimate": 6.263983783035373,
+        "se": 3.8270960178181532
+      }
+    }
+  },
+  "program": {
+    "naive": {
+      "estimate": 42.6742417450692,
+      "se": 0.0
+    },
+    "causal": {
+      "estimate": 2.718591006935557,
+      "se": 1.7558887191883028
+    },
+    "after": {
+      "estimate": 1.1142603379554437,
+      "se": 1.6317344744342563
+    },
+    "cannibalisation": {
+      "estimate": -0.023805976806541906,
+      "se": 0.06374992240332253
+    },
+    "halo": {
+      "estimate": 0.8323750587559935,
+      "se": 0.5085548403435617
+    },
+    "targeting_bias": {
+      "estimate": -39.95565073813365
+    },
+    "true": {
+      "estimate": 4.641420426840452,
+      "se": 2.4512026981613073,
+      "ci_low": -0.16293686155571052,
+      "ci_high": 9.445777715236614
+    },
+    "share_of_naive_that_is_real_pct": 10.876398119895697,
+    "coupon_spend": 5405.519427839189
+  },
+  "type_a": {
+    "naive": {
+      "estimate": 62.63776031394662,
+      "se": 0.0
+    },
+    "causal": {
+      "estimate": 4.0101517759945775,
+      "se": 2.609167381010985
+    },
+    "after": {
+      "estimate": 1.695307997596096,
+      "se": 2.424610594646988
+    },
+    "cannibalisation": {
+      "estimate": 0.0,
+      "se": 0.0
+    },
+    "halo": {
+      "estimate": 0.0,
+      "se": 0.0
+    },
+    "targeting_bias": {
+      "estimate": -58.62760853795204
+    },
+    "true": {
+      "estimate": 5.705459773590674,
+      "se": 3.5618100676209763,
+      "ci_low": -1.27568795894644,
+      "ci_high": 12.686607506127787
+    },
+    "share_of_naive_that_is_real_pct": 9.108658650938903,
+    "coupon_spend": 3637.3807862679946
+  },
+  "type_bc": {
+    "naive": {
+      "estimate": 1.6056755356839751,
+      "se": 0.0
+    },
+    "causal": {
+      "estimate": 0.06161704843523703,
+      "se": 0.07615903107860598
+    },
+    "after": {
+      "estimate": -0.08105972541063611,
+      "se": 0.08021561083167321
+    },
+    "cannibalisation": {
+      "estimate": -0.07277917415576707,
+      "se": 0.19489503592782895
+    },
+    "halo": {
+      "estimate": 2.544721010879586,
+      "se": 1.5547440709490823
+    },
+    "targeting_bias": {
+      "estimate": -1.5440584872487382
+    },
+    "true": {
+      "estimate": 2.45249915974842,
+      "se": 1.5708112373600356,
+      "ci_low": -0.6262908654772499,
+      "ci_high": 5.5312891849740895
+    },
+    "share_of_naive_that_is_real_pct": 152.73939879165687,
+    "coupon_spend": 1768.1386415711947
+  },
+  "type_bc_without_halo": {
+    "naive": {
+      "estimate": 1.6056755356839751,
+      "se": 0.0
+    },
+    "causal": {
+      "estimate": 0.06161704843523703,
+      "se": 0.07615903107860598
+    },
+    "after": {
+      "estimate": -0.08105972541063611,
+      "se": 0.08021561083167321
+    },
+    "cannibalisation": {
+      "estimate": -0.07277917415576707,
+      "se": 0.19489503592782895
+    },
+    "halo": {
+      "estimate": 0.0,
+      "se": 0.0
+    },
+    "targeting_bias": {
+      "estimate": -1.5440584872487382
+    },
+    "true": {
+      "estimate": -0.09222185113116615,
+      "se": 0.22409555387209326,
+      "ci_low": -0.531449136720469,
+      "ci_high": 0.34700543445813664
+    },
+    "share_of_naive_that_is_real_pct": -5.743492323427728,
+    "coupon_spend": 1768.1386415711947
+  },
+  "sensitivity": [
+    {
+      "margin": 0.25,
+      "mail_cost": 0.25,
+      "true": 5.802170230582668,
+      "naive": 53.34643111278745
+    },
+    {
+      "margin": 0.25,
+      "mail_cost": 0.5,
+      "true": 4.219473115309501,
+      "naive": 38.79476522279018
+    },
+    {
+      "margin": 0.25,
+      "mail_cost": 1.0,
+      "true": 2.7300725190784343,
+      "naive": 25.100888078788117
+    },
+    {
+      "margin": 0.275,
+      "mail_cost": 0.25,
+      "true": 6.382387253640936,
+      "naive": 58.6810742240662
+    },
+    {
+      "margin": 0.275,
+      "mail_cost": 0.5,
+      "true": 4.641420426840452,
+      "naive": 42.6742417450692
+    },
+    {
+      "margin": 0.275,
+      "mail_cost": 1.0,
+      "true": 3.003079770986278,
+      "naive": 27.610976886666933
+    },
+    {
+      "margin": 0.3,
+      "mail_cost": 0.25,
+      "true": 6.962604276699203,
+      "naive": 64.01571733534493
+    },
+    {
+      "margin": 0.3,
+      "mail_cost": 0.5,
+      "true": 5.063367738371402,
+      "naive": 46.553718267348216
+    },
+    {
+      "margin": 0.3,
+      "mail_cost": 1.0,
+      "true": 3.2760870228941212,
+      "naive": 30.121065694545738
+    }
+  ],
+  "type_a_by_design": {
+    "Double ML, effect on recipients (primary)": {
+      "estimate": 5.705459773590674,
+      "se": 3.5618100676209763,
+      "ci_low": -1.27568795894644,
+      "ci_high": 12.686607506127787
+    },
+    "Double ML, partially linear": {
+      "estimate": 4.2816633511909234,
+      "se": 2.7980118663969975,
+      "ci_low": -1.2024399069471912,
+      "ci_high": 9.765766609329038
+    },
+    "Event study": {
+      "estimate": 2.619657867833678,
+      "se": 2.8191572217767757,
+      "ci_low": -2.905890286848803,
+      "ci_high": 8.14520602251616
+    },
+    "Event study, pre-campaign drift removed": {
+      "estimate": 5.446719200215609,
+      "se": 3.180541733952457,
+      "ci_low": -0.7871425983312061,
+      "ci_high": 11.680580998762425
+    }
+  }
+}

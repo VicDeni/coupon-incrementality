@@ -1,0 +1,253 @@
+{
+  "placebo_dates": {
+    "shift_weeks": 8,
+    "dml_type_a": {
+      "estimate": 1.236563337208162,
+      "se": 1.7092039833596528,
+      "ci_low": -2.1134764701767574,
+      "ci_high": 4.586603144593082
+    },
+    "triple_diff_type_bc": {
+      "n_campaigns": 16,
+      "covered_during": {
+        "coef": -0.1870598866448433,
+        "se": 0.035704615121533424,
+        "p_value": 1.6136556624246623e-07,
+        "lift_pct": -17.060593472972144,
+        "lift_pct_low": -22.66624468651707,
+        "lift_pct_high": -11.048608370680462
+      },
+      "sibling_during": {
+        "coef": -0.0350349195575718,
+        "se": 0.014145753375794535,
+        "p_value": 0.01325998371950865,
+        "lift_pct": -3.4428301667647223,
+        "lift_pct_low": -6.083123426719056,
+        "lift_pct_high": -0.7283101144285018
+      },
+      "placebo_during": {
+        "coef": 0.015237250358230373,
+        "se": 0.009798456981423299,
+        "p_value": 0.11993027721476057,
+        "lift_pct": 1.5353929125409185,
+        "lift_pct_low": -0.3959512804882213,
+        "lift_pct_high": 3.5041862900148733
+      }
+    }
+  },
+  "placebo_products": {
+    "placebo_during": {
+      "coef": -0.006100894840855954,
+      "se": 0.010901303777387822,
+      "p_value": 0.5757194334028757,
+      "lift_pct": -0.6082322171089486,
+      "lift_pct_low": -2.709326811999406,
+      "lift_pct_high": 1.5382377293133793
+    },
+    "placebo_post": {
+      "coef": -0.008002684986130127,
+      "se": 0.012641891373803059,
+      "p_value": 0.5267146469021493,
+      "lift_pct": -0.79707487512955,
+      "lift_pct_low": -3.2248884426388527,
+      "lift_pct_high": 1.6916456613692807
+    }
+  },
+  "short_baseline_triple_diff": {
+    "covered_during": {
+      "coef": 0.03940691472001265,
+      "se": 0.04390051358876851,
+      "p_value": 0.3693768056777502,
+      "lift_pct": 4.019366765945185,
+      "lift_pct_low": -4.556573892401945,
+      "lift_pct_high": 13.36588703542843
+    },
+    "covered_post": {
+      "coef": -0.0371346195781356,
+      "se": 0.05141586974583142,
+      "p_value": 0.47014667384467623,
+      "lift_pct": -3.645358559406136,
+      "lift_pct_low": -12.882105242464378,
+      "lift_pct_high": 6.570721813067365
+    },
+    "sibling_during": {
+      "coef": 0.0006668915815256435,
+      "se": 0.01755467770138854,
+      "p_value": 0.9696961376611779,
+      "lift_pct": 0.0667114003157355,
+      "lift_pct_low": -3.3176810367042973,
+      "lift_pct_high": 3.5695754699008377
+    },
+    "sibling_post": {
+      "coef": -0.006413992129983142,
+      "se": 0.018822300015114087,
+      "p_value": 0.7332800584368848,
+      "lift_pct": -0.6393466389885804,
+      "lift_pct_low": -4.238074967878845,
+      "lift_pct_high": 3.0946217195983854
+    },
+    "placebo_during": {
+      "coef": -0.00664196010753338,
+      "se": 0.013221478278362925,
+      "p_value": 0.615413338338243,
+      "lift_pct": -0.6619951045228336,
+      "lift_pct_low": -3.203135267339134,
+      "lift_pct_high": 1.9458558277477507
+    },
+    "placebo_post": {
+      "coef": -0.006382725103833271,
+      "se": 0.01558912129262306,
+      "p_value": 0.6822207775766047,
+      "lift_pct": -0.6362398782723422,
+      "lift_pct_low": -3.6262998281723844,
+      "lift_pct_high": 2.4465887262301074
+    }
+  },
+  "single_campaign": {
+    "dml_type_a": {
+      "estimate": 2.643128528308067,
+      "se": 1.362370698728476,
+      "ci_low": -0.027118041199746035,
+      "ci_high": 5.3133750978158805,
+      "n_recipient_rows": 1860
+    },
+    "triple_diff_type_bc": {
+      "n_recipient_campaigns": 366,
+      "covered_during": {
+        "coef": 0.17639827923919926,
+        "se": 0.12734352493819798,
+        "p_value": 0.16598645132711964,
+        "lift_pct": 19.291307656206808,
+        "lift_pct_low": -7.0576189371107825,
+        "lift_pct_high": 53.11008734216537
+      },
+      "covered_post": {
+        "coef": -0.058959824801137525,
+        "se": 0.13912432392913132,
+        "p_value": 0.6717172544441223,
+        "lift_pct": -5.725535665018384,
+        "lift_pct_low": -28.225325075039915,
+        "lift_pct_high": 23.827445194836773
+      },
+      "sibling_during": {
+        "coef": 0.07278095467538725,
+        "se": 0.05038491155810737,
+        "p_value": 0.14859865906941083,
+        "lift_pct": 7.549492897539999,
+        "lift_pct_low": -2.563729475440022,
+        "lift_pct_high": 18.712398989064678
+      },
+      "sibling_post": {
+        "coef": 0.05416884793507879,
+        "se": 0.053555097413789006,
+        "p_value": 0.3117962352330794,
+        "lift_pct": 5.566283359724343,
+        "lift_pct_low": -4.95286068923578,
+        "lift_pct_high": 17.249611752633907
+      },
+      "placebo_during": {
+        "coef": -0.004121920623149845,
+        "se": 0.03540232755634339,
+        "p_value": 0.9073111420954203,
+        "lift_pct": -0.41134371683831306,
+        "lift_pct_low": -7.087240928536834,
+        "lift_pct_high": 6.744225006357192
+      },
+      "placebo_post": {
+        "coef": 0.059233433955073606,
+        "se": 0.03313677359746004,
+        "p_value": 0.07384964071372102,
+        "lift_pct": 6.102289060386816,
+        "lift_pct_low": -0.5697158151012429,
+        "lift_pct_high": 13.222001084893536
+      }
+    }
+  },
+  "hidden_confounding": {
+    "double_ml": {
+      "robustness_value_pct": 2.411043796538501,
+      "robustness_value_ci_pct": 0.27213506537569876,
+      "benchmarks": {
+        "all spending history": {
+          "n_features": 35,
+          "cf_y_pct": 3.419964822672296,
+          "cf_d_pct": 12.62648490957089,
+          "estimate_shift": 0.8002082788103566
+        },
+        "deal and coupon behaviour": {
+          "n_features": 7,
+          "cf_y_pct": 0.21602448625172085,
+          "cf_d_pct": 0.07110692438466618,
+          "estimate_shift": -0.07937739462320237
+        },
+        "earlier campaigns": {
+          "n_features": 5,
+          "cf_y_pct": 0.0,
+          "cf_d_pct": 7.032521134053525,
+          "estimate_shift": 0.06973117182032262
+        }
+      }
+    },
+    "sensemakr_ols": {
+      "estimate": 2.4320361941875044,
+      "se": 0.7273683382500398,
+      "partial_r2_treatment_outcome_pct": 0.21314291864129176,
+      "robustness_value_pct": 4.516103116904436,
+      "robustness_value_ci_pct": 1.8934595077514957,
+      "bounds": {
+        "pre-campaign weekly spend": [
+          {
+            "k": 1,
+            "confounder_r2_with_treatment_pct": 0.2185974212845354,
+            "confounder_r2_with_outcome_pct": 0.5709639967515245,
+            "adjusted_estimate": 2.245924643040078,
+            "adjusted_ci_low": 0.8223630944336082,
+            "adjusted_ci_high": 3.669486191646548
+          },
+          {
+            "k": 2,
+            "confounder_r2_with_treatment_pct": 0.4371948425690708,
+            "confounder_r2_with_outcome_pct": 1.1419389279051877,
+            "adjusted_estimate": 2.059402910371544,
+            "adjusted_ci_low": 0.6383772554692462,
+            "adjusted_ci_high": 3.480428565273842
+          },
+          {
+            "k": 3,
+            "confounder_r2_with_treatment_pct": 0.6557922638536061,
+            "confounder_r2_with_outcome_pct": 1.7129248566655333,
+            "adjusted_estimate": 1.8724689591575334,
+            "adjusted_ci_low": 0.4539950008381908,
+            "adjusted_ci_high": 3.290942917476876
+          }
+        ],
+        "earlier Type A campaigns": [
+          {
+            "k": 1,
+            "confounder_r2_with_treatment_pct": 7.2984618174840605,
+            "confounder_r2_with_outcome_pct": 0.00028396779692814163,
+            "adjusted_estimate": 2.4071546117303217,
+            "adjusted_ci_low": 0.9260001545208485,
+            "adjusted_ci_high": 3.8883090689397948
+          },
+          {
+            "k": 2,
+            "confounder_r2_with_treatment_pct": 14.596923634968121,
+            "confounder_r2_with_outcome_pct": 0.0005744843091827741,
+            "adjusted_estimate": 2.379892205612472,
+            "adjusted_ci_low": 0.8367482870095229,
+            "adjusted_ci_high": 3.923036124215421
+          },
+          {
+            "k": 3,
+            "confounder_r2_with_treatment_pct": 21.89538545245218,
+            "confounder_r2_with_outcome_pct": 0.0008731937229996005,
+            "adjusted_estimate": 2.349704982866853,
+            "adjusted_ci_low": 0.7360741124266952,
+            "adjusted_ci_high": 3.9633358533070107
+          }
+        ]
+      }
+    }
+  }
+}

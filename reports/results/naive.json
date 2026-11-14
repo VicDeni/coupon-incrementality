@@ -1,0 +1,34 @@
+{
+  "unit": "dollars of in-store spend per household per campaign week",
+  "comparison": {
+    "A": {
+      "n_campaigns": 3,
+      "n_recipient_campaigns": 3286,
+      "n_redeemer_campaigns": 568,
+      "recipients_weekly_spend": 52.70430544083123,
+      "non_recipients_weekly_spend": 18.32549518594344,
+      "recipient_lift_pct": 187.60098925598493,
+      "redeemers_weekly_spend": 79.33657916247486,
+      "non_redeemers_weekly_spend": 29.801105747493494,
+      "redeemer_lift_pct": 166.2202531499949
+    },
+    "BC": {
+      "n_campaigns": 19,
+      "n_recipient_campaigns": 2612,
+      "n_redeemer_campaigns": 172,
+      "recipients_weekly_spend": 71.57629148739639,
+      "non_recipients_weekly_spend": 30.39935326699094,
+      "recipient_lift_pct": 135.45333632185304,
+      "redeemers_weekly_spend": 89.78811360280545,
+      "non_redeemers_weekly_spend": 33.209472774074186,
+      "redeemer_lift_pct": 170.36898240944316
+    }
+  },
+  "redemption_attribution": {
+    "matched_redemptions": 1130,
+    "coupon_dollars": 1380.2799999999995,
+    "attributed_sales": 4510.609999999981,
+    "sales_per_coupon_dollar": 3.2678949198713174,
+    "gross_profit_per_coupon_dollar": 0.8986711029646125
+  }
+}

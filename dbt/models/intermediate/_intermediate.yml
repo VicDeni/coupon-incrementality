@@ -1,0 +1,49 @@
+version: 2
+
+models:
+  - name: int_households
+    description: Every household in the transaction log, with its primary store.
+    columns:
+      - name: household_id
+        tests: [unique, not_null]
+      - name: primary_store_id
+        tests: [not_null]
+
+  - name: int_household_campaigns
+    tests:
+      - unique_combination:
+          arguments:
+            columns: [household_id, campaign_id]
+
+  - name: int_redemption_values
+    description: Dollar value of each campaign-coupon redemption, recovered from the basket.
+    columns:
+      - name: coupon_value
+        tests:
+          - not_null
+          - accepted_range:
+              arguments: {min_value: 0, inclusive: false}
+
+  - name: int_campaign_product_groups
+    description: Covered / sibling / placebo / other product groups for each Type B/C campaign.
+    tests:
+      - unique_combination:
+          arguments:
+            columns: [campaign_id, product_id]
+    columns:
+      - name: product_group
+        tests:
+          - accepted_values:
+              arguments:
+                values: ["covered", "sibling", "placebo", "other"]
+
+  - name: int_group_promotions
+    columns:
+      - name: display_share
+        tests:
+          - accepted_range:
+              arguments: {min_value: 0, max_value: 1.000001}
+      - name: mailer_share
+        tests:
+          - accepted_range:
+              arguments: {min_value: 0, max_value: 1.000001}

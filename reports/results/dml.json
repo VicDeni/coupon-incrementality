@@ -1,0 +1,144 @@
+{
+  "unit": "dollars of in-store spend per household per campaign week",
+  "campaigns": [
+    8,
+    13,
+    18
+  ],
+  "n_rows": 7407,
+  "n_features": 221,
+  "n_recipient_rows": 3286,
+  "overlap": {
+    "bounds": [
+      0.05,
+      0.95
+    ],
+    "n_trimmed": 2158,
+    "share_trimmed": 0.2913460240313217,
+    "recipients_kept": 3040,
+    "share_recipients_kept": 0.9251369446135118,
+    "non_recipients_kept": 2209
+  },
+  "mean_campaign_weeks": 7.333881578947368,
+  "recipient_mean_spend": 51.233693374060145,
+  "coupon_cost_per_recipient": 0.5725540996386315,
+  "naive_all": {
+    "recipients": 52.70430544083123,
+    "non_recipients": 18.2920765590876,
+    "difference": 34.41222888174363,
+    "lift_pct": 188.12642058753818
+  },
+  "naive_trimmed": {
+    "recipients": 51.233693374060145,
+    "non_recipients": 26.86374458384531,
+    "difference": 24.369948790214835,
+    "lift_pct": 90.71687200625733
+  },
+  "during": {
+    "att": {
+      "estimate": 2.200976636285041,
+      "se": 1.4320446622841172,
+      "ci_low": -0.7146130229984848,
+      "ci_high": 5.007735454174634,
+      "p_value": 0.12430630771572612
+    },
+    "plr": {
+      "estimate": 1.4195242535380403,
+      "se": 0.7664553056031744,
+      "ci_low": -0.08270054120382242,
+      "ci_high": 2.921749048279903,
+      "p_value": 0.06401663802609137
+    },
+    "ate": {
+      "estimate": 1.804381429869525,
+      "se": 1.0197980279174421,
+      "ci_low": -0.19438597635363442,
+      "ci_high": 3.8031488360926846,
+      "p_value": 0.07683519157098795
+    },
+    "att_untrimmed": {
+      "estimate": 2.064755288503117,
+      "se": 1.479499439293569,
+      "ci_low": -0.6014354586373427,
+      "ci_high": 4.964520904665716,
+      "p_value": 0.162841932983387
+    },
+    "att_levels": {
+      "estimate": 2.1457057897021463,
+      "se": 1.5151614327545326,
+      "ci_low": -0.8239560492608446,
+      "ci_high": 5.115367628665137,
+      "p_value": 0.15672967370746796
+    }
+  },
+  "sensitivity": {
+    "robustness_value_pct": 2.411043796538501,
+    "robustness_value_ci_pct": 0.27213506537569876,
+    "benchmarks": {
+      "all spending history": {
+        "n_features": 35,
+        "cf_y_pct": 3.419964822672296,
+        "cf_d_pct": 12.62648490957089,
+        "estimate_shift": 0.8002082788103566
+      },
+      "deal and coupon behaviour": {
+        "n_features": 7,
+        "cf_y_pct": 0.21602448625172085,
+        "cf_d_pct": 0.07110692438466618,
+        "estimate_shift": -0.07937739462320237
+      },
+      "earlier campaigns": {
+        "n_features": 5,
+        "cf_y_pct": 0.0,
+        "cf_d_pct": 7.032521134053525,
+        "estimate_shift": 0.06973117182032262
+      }
+    }
+  },
+  "by_campaign": {
+    "8": {
+      "estimate": 1.4008109072348471,
+      "se": 3.9251831487003708,
+      "ci_low": -5.738405682853049,
+      "ci_high": 9.094011147263931,
+      "p_value": 0.7211832553854749,
+      "n_recipients": 1039
+    },
+    "13": {
+      "estimate": -0.6359302485839559,
+      "se": 4.701004521084703,
+      "ci_low": -8.519111404944208,
+      "ci_high": 8.577860165218409,
+      "p_value": 0.892394137330986,
+      "n_recipients": 986
+    },
+    "18": {
+      "estimate": 3.3545638861173486,
+      "se": 4.7156572888261135,
+      "ci_low": -5.347809801408559,
+      "ci_high": 12.597082335650327,
+      "p_value": 0.47685672364297926,
+      "n_recipients": 1015
+    }
+  },
+  "post": {
+    "campaigns": [
+      8,
+      13
+    ],
+    "weeks": 4,
+    "att": {
+      "estimate": 1.705992568268275,
+      "se": 2.4398915484841392,
+      "ci_low": -3.0761069929443003,
+      "ci_high": 6.488092129480851,
+      "p_value": 0.4844218267895948
+    }
+  },
+  "aipw_cross_check": {
+    "estimate": 2.457060532087939,
+    "se": 1.493073530710801,
+    "ci_low": -0.46936358810523116,
+    "ci_high": 5.383484652281108
+  }
+}

@@ -1,0 +1,48 @@
+version: 2
+
+models:
+  - name: dim_household
+    description: One row per household - program exposure and demographics.
+    columns:
+      - name: household_id
+        tests: [unique, not_null]
+
+  - name: fct_household_campaign
+    description: Household x campaign received, with redemptions.
+    tests:
+      - unique_combination:
+          arguments:
+            columns: [household_id, campaign_id]
+
+  - name: fct_household_week
+    description: >
+      Balanced household x week panel. `spend` excludes fuel. Zero rows are real zeros:
+      the household did not shop that week.
+    tests:
+      - unique_combination:
+          arguments:
+            columns: [household_id, week]
+    columns:
+      - name: spend
+        tests:
+          - accepted_range:
+              arguments: {min_value: 0}
+
+  - name: fct_household_group_week
+    description: >
+      Stacked triple-difference panel - campaign x household x product group x week,
+      16 weeks before each Type B/C campaign to 8 weeks after.
+    tests:
+      - unique_combination:
+          arguments:
+            columns: [campaign_id, household_id, product_group, week]
+    columns:
+      - name: period
+        tests:
+          - accepted_values:
+              arguments:
+                values: ["pre", "during", "post"]
+      - name: spend
+        tests:
+          - accepted_range:
+              arguments: {min_value: 0}

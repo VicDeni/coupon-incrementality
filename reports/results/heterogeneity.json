@@ -1,0 +1,93 @@
+{
+  "unit": "dollars of in-store spend per household per campaign week",
+  "n_rows": 5249,
+  "predicted_effect": {
+    "mean": 1.5143713927361817,
+    "p10": -0.4320823739562994,
+    "p50": 1.1629126431387138,
+    "p90": 4.001470424076202
+  },
+  "blp": {
+    "average_effect": 2.104656063126598,
+    "average_effect_se": 0.9897867199335195,
+    "slope": -0.004161168556761384,
+    "slope_se": 0.7967000866642534,
+    "slope_p_value_one_sided": 0.5020836680618976
+  },
+  "gates": {
+    "group": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "effect": [
+      1.6620189189192092,
+      0.6766437309752255,
+      1.6441429676351178,
+      1.04108872106278,
+      5.48803294919776
+    ],
+    "se": [
+      2.9058751656864366,
+      1.698701023334075,
+      1.600564856335352,
+      1.712166457590113,
+      3.2496829301345427
+    ],
+    "top_minus_bottom": 3.826014030278551,
+    "top_minus_bottom_se": 4.39896103736341,
+    "top_minus_bottom_p_value": 0.3844348458831969
+  },
+  "profile": {
+    "Weekly spend ($)": {
+      "bottom_fifth": 47.978079190567236,
+      "top_fifth": 62.07303339664451
+    },
+    "Trips per week": {
+      "bottom_fifth": 1.4632727852135117,
+      "top_fifth": 2.220164609053498
+    },
+    "Basket size ($)": {
+      "bottom_fifth": 32.010778893893225,
+      "top_fifth": 39.14969107627677
+    },
+    "Share of spend bought on deal": {
+      "bottom_fifth": 0.4380435322706235,
+      "top_fifth": 0.522198796089645
+    },
+    "Average loyalty discount": {
+      "bottom_fifth": 0.14399561342378508,
+      "top_fifth": 0.17419360780086302
+    },
+    "Other coupon dollars used (12 wk)": {
+      "bottom_fifth": 2.863986615678776,
+      "top_fifth": 6.872022792022792
+    },
+    "Private-label share": {
+      "bottom_fifth": 0.2548143444897911,
+      "top_fifth": 0.2568338090146835
+    },
+    "Categories shopped": {
+      "bottom_fifth": 55.18355640535373,
+      "top_fifth": 76.18518518518519
+    },
+    "Spend trend ($/wk per wk)": {
+      "bottom_fifth": 2.3971607121368113,
+      "top_fifth": -2.74734767132203
+    },
+    "Share of weeks with a trip": {
+      "bottom_fifth": 0.6163957934990439,
+      "top_fifth": 0.7823678379233935
+    },
+    "Earlier Type A campaigns": {
+      "bottom_fifth": 0.7418738049713193,
+      "top_fifth": 0.8784425451092118
+    },
+    "Earlier coupon redemptions": {
+      "bottom_fifth": 0.29349904397705545,
+      "top_fifth": 0.6600189933523267
+    }
+  }
+}

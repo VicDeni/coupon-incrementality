@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: raw
+    description: >
+      84.51 "The Complete Journey" tables, extracted to parquet by
+      `python -m coupon_incrementality.download`.
+    meta:
+      external_location: "{{ env_var('COUPON_RAW_DIR', '../data/raw') }}/{name}.parquet"
+    tables:
+      - name: transactions
+      - name: promotions
+      - name: campaigns
+      - name: campaign_descriptions
+      - name: coupons
+      - name: coupon_redemptions
+      - name: products
+      - name: demographics

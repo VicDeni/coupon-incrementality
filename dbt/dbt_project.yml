@@ -1,0 +1,31 @@
+name: coupon_incrementality
+version: "1.0.0"
+config-version: 2
+profile: coupon_incrementality
+
+model-paths: ["models"]
+test-paths: ["tests"]
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  coupon_incrementality:
+    staging:
+      # tables, not views, so the warehouse file is self-contained once built
+      +materialized: table
+    intermediate:
+      +materialized: table
+    marts:
+      +materialized: table
+
+vars:
+  # Monday that opens the dataset's week 1 (week w starts on this date + 7 * (w - 1)).
+  week_one_start: "2016-12-26"
+  first_week: 1
+  last_week: 53
+  # Triple-difference panel: weeks kept before a campaign starts and after it ends.
+  # The analysis uses 8 weeks before; weeks 9-16 before are kept for the placebo-date test.
+  pre_window_weeks: 16
+  post_window_weeks: 8
+  # A campaign needs at least this many weeks of data before it starts to be analysed.
+  min_pre_weeks: 8
