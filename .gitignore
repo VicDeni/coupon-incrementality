@@ -13,3 +13,4 @@ dbt/.user.yml
 .DS_Store
 .ipynb_checkpoints/
 catboost_info/
+*.egg-info/
